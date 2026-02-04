@@ -7,7 +7,7 @@
 Install OpenClaw on any Android device via Termux:
 
 ```bash
-curl -sL owlia.bot/android | bash
+curl -sL get.owlia.bot/android | bash
 ```
 
 ### Requirements

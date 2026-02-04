@@ -1,6 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
 # Owlia Android Bootstrap Script
-# Usage: curl -sL owlia.bot/android | bash
+# Usage: curl -sL get.owlia.bot/android | bash
 #
 # This script installs OpenClaw on Android via Termux.
 
