@@ -103,9 +103,8 @@ install_deps() {
 # Install OpenClaw
 install_openclaw() {
     info "Installing OpenClaw..."
-    # Skip node-llama-cpp build (not needed for cloud LLM usage)
-    export NODE_LLAMA_CPP_SKIP_DOWNLOAD=true
-    npm install -g openclaw@latest --ignore-scripts 2>/dev/null || npm install -g openclaw@latest
+    # Skip optional deps (node-llama-cpp, canvas) - not needed for cloud LLM
+    npm install -g openclaw@latest --omit=optional
     
     if command -v openclaw &> /dev/null; then
         VERSION=$(openclaw --version 2>/dev/null || echo "unknown")
